@@ -21,7 +21,7 @@ struct ContentView: View {
                 .frame(width: 40)
             
             VStack(spacing: 20) {
-                Text("Bom dia, \(name)")
+                Text("Bom dia, \(name.count != 0 ? name : "Visitante")")
                     .font(.title)
                     .fontWeight(.semibold)
                 
